@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d0d1a;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+}
+
+/* ── SIDEBAR ── */
+.sidebar {
+  width: 220px;
+  background: #13131f;
+  border-right: 2px solid #2a2a4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+  gap: 40px;
+  flex-shrink: 0;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #a259ff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.nav-btn {
+  background: #1e1e35;
+  color: #ccc;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.nav-btn:hover {
+  background: #a259ff;
+  color: #fff;
+  border-color: #a259ff;
+}
+
+/* ── MAIN CONTENT ── */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 16px;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #a259ff;
+  text-shadow: 0 0 20px #a259ff88;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* ── CARDS ── */
+.cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #1a1a2e;
+  border: 2px solid #2a2a4a;
+  border-radius: 16px;
+  padding: 36px 32px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #a259ff;
+  box-shadow: 0 8px 30px #a259ff44;
+}
+
+.card-icon {
+  font-size: 2.4rem;
+}
+
+.card-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ddd;
+}
+
+/* ── CODE CARD ── */
+.code-card {
+  width: 240px;
+}
+
+.code-input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.code-input-wrap input {
+  background: #0d0d1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.code-input-wrap input:focus {
+  border-color: #a259ff;
+}
+
+.code-input-wrap button {
+  background: #a259ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.code-input-wrap button:hover {
+  background: #8a3de8;
+}

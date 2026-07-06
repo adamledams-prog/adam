@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpaceGame</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- GAUCHE -->
+    <aside class="sidebar">
+      <div class="logo">🚀 SpaceGame</div>
+      <nav class="nav-left">
+        <button class="nav-btn" onclick="goTo('boutique')">🛒 Boutique</button>
+        <button class="nav-btn" onclick="goTo('compte')">👤 Mon Compte</button>
+      </nav>
+    </aside>
+
+    <!-- DROITE -->
+    <main class="content">
+      <h1 class="title">Bienvenue</h1>
+      <p class="subtitle">Que veux-tu faire ?</p>
+
+      <div class="cards">
+
+        <div class="card" onclick="goTo('creer')">
+          <div class="card-icon">🎮</div>
+          <div class="card-label">Créer une partie</div>
+        </div>
+
+        <div class="card" onclick="goTo('trouver')">
+          <div class="card-icon">🔍</div>
+          <div class="card-label">Trouver une partie</div>
+        </div>
+
+        <div class="card code-card">
+          <div class="card-icon">🔑</div>
+          <div class="card-label">Entrer un code</div>
+          <div class="code-input-wrap">
+            <input id="codeInput" type="text" maxlength="6" placeholder="ABC123" />
+            <button onclick="joinByCode()">Rejoindre</button>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+  <div class="page">
+
+    <!-- GAUCHE -->
+    <aside class="sidebar">
+      <div class="logo">🚀 SpaceGame</div>
+      <nav class="nav-left">
+        <button class="nav-btn" onclick="goTo('boutique')">🛒 Boutique</button>
+        <button class="nav-btn" onclick="goTo('compte')">👤 Mon Compte</button>
+      </nav>
+    </aside>
+
+    <!-- DROITE -->
+    <main class="content">
+      <h1 class="title">Bienvenue</h1>
+      <p class="subtitle">Que veux-tu faire ?</p>
+
+      <div class="cards">
+
+        <div class="card" onclick="goTo('creer')">
+          <div class="card-icon">🎮</div>
+          <div class="card-label">Créer une partie</div>
+        </div>
+
+        <div class="card" onclick="goTo('trouver')">
+          <div class="card-icon">🔍</div>
+          <div class="card-label">Trouver une partie</div>
+        </div>
+
+        <div class="card code-card">
+          <div class="card-icon">🔑</div>
+          <div class="card-label">Entrer un code</div>
+          <div class="code-input-wrap">
+            <input id="codeInput" type="text" maxlength="6" placeholder="ABC123" />
+            <button onclick="joinByCode()">Rejoindre</button>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
